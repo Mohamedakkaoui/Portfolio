@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.isvisible {
+  opacity: 1;
+  animation: push-in 0.6s;
+}
+
+.ishidden {
+  animation: push-out 0.6s;
+}
+
+@keyframes push-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes push-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(110%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.animated-text {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  color: whitesmoke;
+}
+
+.animated-text span {
+  position: relative;
+}
+.animated-text span::before {
+  content: "Mohamed akkaoui";
+  color: white;
+  animation: words 20s infinite;
+}
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #2f3542;
+  border-left: 2px solid #ff7f50;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+    border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%, 33% {
+    content: "Mohamed akkaoui";
+  }
+  34%, 66% {
+    content: "Web developer";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 8px);
+  }
+}
+
+
