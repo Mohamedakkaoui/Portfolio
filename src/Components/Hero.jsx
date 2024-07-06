@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Backimg from "../assets/pexels-photo-1287075.webp";
 import { ReactTyped } from "react-typed";
+import { Github, Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
+
 function Hero() {
   const [Visible, SetVisible] = useState(1);
 
@@ -20,7 +22,7 @@ function Hero() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 flex items-center justify-center z-11 w-[90%] mx-auto">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-11 w-[90%] mx-auto">
           <div className="text-center w-full items-center">
             <div className="text-white text-8xl font-semibold mb-6">
               <h1>Welcome!</h1>
@@ -30,7 +32,7 @@ function Hero() {
               {/*typing animation using react-typed */}
               <div className="relative text-[#7C7458] ">
                 <ReactTyped
-                  strings={["Mohamed Akkaoui", "Web developer"]}
+                  strings={["Mohamed Akkaoui", "a Web developer"]}
                   typeSpeed={60}
                   backSpeed={40}
                   loop
@@ -41,6 +43,36 @@ function Hero() {
             {/* <div class="animated-text">
               I'am <span></span>
             </div> */}
+          </div>
+          <div
+            className="text-white px-9 py-3 mt-10 rounded-3xl flex gap-10 "
+            style={{ backgroundColor: "rgba(200, 200, 200, 0.05)" }}
+          >
+            <div className="hover:cursor-pointer">
+              <a href="https://github.com/Mohamedakkaoui">
+                <Github size={20} />
+              </a>
+            </div>
+            <div className="hover:cursor-pointer">
+              <a href="https://www.linkedin.com/in/mohamedakkaoui/">
+                <Linkedin size={20} />
+              </a>
+            </div>
+            <div className="hover:cursor-pointer">
+              <a href="https://x.com/_datboiiMohamed">
+                <Twitter size={20} />
+              </a>
+            </div>
+            <div className="hover:cursor-pointer">
+              <a href="https://www.instagram.com/mohamed_akkaoui/">
+                <Instagram size={20} />
+              </a>
+            </div>
+            <div className="hover:cursor-pointer">
+              <a href="https://web.facebook.com/profile.php?id=100008860692186">
+                <Facebook size={20} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
