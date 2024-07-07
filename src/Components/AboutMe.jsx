@@ -1,5 +1,6 @@
 import React from "react";
 import MeImage from "../assets/image00001-min.png";
+import CV from "../assets/CV-Mohamed-Akkaoui.pdf";
 function AboutMe() {
   return (
     <>
@@ -51,7 +52,9 @@ function AboutMe() {
           <div className="border-2 rounded-3xl">
             {" "}
             <button className="px-[34px] py-[12px] border-white">
-              Download CV
+              <a href={CV} download="CV-Mohamed-Akkaoui.pdf">
+                Download CV
+              </a>
             </button>
           </div>{" "}
           <div className="">
