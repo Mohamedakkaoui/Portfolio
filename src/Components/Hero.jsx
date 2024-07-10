@@ -39,10 +39,6 @@ function Hero() {
                 ></ReactTyped>
               </div>
             </div>
-            {/*typing animation using css  */}
-            {/* <div class="animated-text">
-              I'am <span></span>
-            </div> */}
           </div>
           <div
             className="text-white px-9 py-3 mt-10 rounded-3xl flex gap-10 "
