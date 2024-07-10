@@ -14,24 +14,65 @@ function Contactme() {
             <div className="text-[#c49b66] font-semibold mb-1 tracking-widest">
               PHONE :
             </div>
-            <div className="mb-8 text-lg">+212618151693</div>
+            <div className="mb-8 text-lg">+212631603723</div>
             <div className="text-[#c49b66] font-semibold mb-1 tracking-widest">
               ADRESS :
             </div>
             <div className="mb-8 text-lg">
-              3rd Avenue Upper eeat side,
+              Oulad Aarfa AL Amal Nr 663,
               <br />
-              San francisco
+              Kenitra
             </div>
             <div className="text-[#c49b66] font-semibold mb-1 tracking-widest">
               EMAIL :
             </div>
-            <div className="mb-8 text-lg">moahmedakkaoui00@gmail.com</div>
+            <div className="mb-8 text-lg">akkaouimohamed00@gmail.com</div>
           </div>
-          <div className="w-[60%] ">
-            <div className="flex">
-              <div>input one</div>
-              <div>input two</div>
+          <div className="w-[60%]">
+            <div className="flex justify-between mb-4">
+              <div className="w-[45%]">
+                {" "}
+                <div class="relative mt-1">
+                  <input
+                    type="text"
+                    id="Full Name"
+                    className="block w-full p-3 ps-6 text-[#9ca3af] focus:outline-none rounded-full bg-[#222222] "
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div className="w-[45%]">
+                <div class="relative mt-1">
+                  <input
+                    type="email"
+                    id="Full Name"
+                    className="block w-full p-3 ps-6 text-[#9ca3af] focus:outline-none rounded-full bg-[#222222]"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              {" "}
+              <div class="relative mt-1 outline-none">
+                <input
+                  type="text"
+                  id="Full Name"
+                  className="block w-full p-3 ps-6 text-[#9ca3af] focus:outline-none rounded-full bg-[#222222] "
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <textarea
+                name="Message"
+                placeholder="Message"
+                id="Message"
+                className=" text-[#9ca3af] focus:outline-none p-3 ps-6 w-full h-[150px] mt-4 rounded-xl bg-[#222222] "
+              ></textarea>
             </div>
           </div>
         </div>
