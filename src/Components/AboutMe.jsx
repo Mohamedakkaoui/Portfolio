@@ -11,7 +11,7 @@ function AboutMe() {
             <img
               src={MeImage}
               alt="Mohamed Akkaoui"
-              className="rounded-sm w-full"
+              className="rounded-3xl w-full"
             />
           </div>
           <div className="flex flex-col flex-start pt-[20px] ml-[129px] w-[50%]">
