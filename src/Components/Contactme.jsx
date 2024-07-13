@@ -26,7 +26,7 @@ function Contactme() {
             </div>
             <div className="mb-8 text-lg">+212631603723</div>
             <div className="text-[#c49b66] font-semibold mb-1 tracking-widest">
-              ADRESS :
+              ADDRESS :
             </div>
             <div className="mb-8 text-lg">
               Oulad Aarfa AL Amal Nr 663,
