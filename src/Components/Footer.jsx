@@ -68,7 +68,7 @@ function Footer() {
             </div>
           ))}
         </div>
-        <div className="text-[#999999] text-center mt-7">
+        <div className="text-[#999999] text-center mt-10">
           © 2024 UI-Depecez-vous. ALL RIGHTS RESERVED.
         </div>
       </div>
