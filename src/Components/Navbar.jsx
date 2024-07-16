@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
-export default function NavBar() {
+import { Link } from "react-router-dom";
+export default function NavBar({ scrollToSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -42,8 +42,8 @@ export default function NavBar() {
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg text-center  md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-[#7C7458] hover:text-[#7C7458] md:p-0 font-bold"
+                onClick={() => scrollToSection("home")}
+                className="hover:cursor-pointer block py-2 px-3 text-white rounded md:bg-transparent md:text-[#7C7458] hover:text-[#7C7458] md:p-0 font-bold"
                 aria-current="page"
               >
                 Home
@@ -51,32 +51,26 @@ export default function NavBar() {
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-white rounded  md:hover:bg-transparent font-semibold md:border-0 hover:text-[#7C7458] md:p-0 "
+                onClick={() => scrollToSection("about")}
+                className="hover:cursor-pointer block py-2 px-3 text-white rounded  md:hover:bg-transparent font-semibold md:border-0 hover:text-[#7C7458] md:p-0 "
               >
                 About
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded  md:hover:bg-transparent font-semibold md:border-0 hover:text-[#7C7458] md:p-0 "
-              >
+              <a className="hover:cursor-pointer block py-2 px-3 text-white rounded  md:hover:bg-transparent font-semibold md:border-0 hover:text-[#7C7458] md:p-0 ">
                 Services
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded  md:hover:bg-transparent font-semibold md:border-0 hover:text-[#7C7458] md:p-0 "
-              >
+              <a className="hover:cursor-pointer block py-2 px-3 text-white rounded  md:hover:bg-transparent font-semibold md:border-0 hover:text-[#7C7458] md:p-0 ">
                 Portfolio
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-white rounded font-semibold  md:hover:bg-transparent md:border-0 hover:text-[#7C7458] md:p-0 "
+                onClick={() => scrollToSection("contact")}
+                className="hover:cursor-pointer block py-2 px-3 text-white rounded font-semibold  md:hover:bg-transparent md:border-0 hover:text-[#7C7458] md:p-0 "
               >
                 Contact
               </a>
