@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import MeImage from "../assets/image00001-min.png";
 import CV from "../assets/CV-Mohamed-Akkaoui.pdf";
-function AboutMe() {
+function AboutMe({ScrollTosection}) {
   return (
     <>
       <div className="bg-[#161617]">
@@ -59,7 +59,7 @@ function AboutMe() {
           </div>{" "}
           <div className="">
             {" "}
-            <button className="px-[34px] py-[12px] bg-white text-[#7C7458] rounded-3xl ">
+            <button onClick={() => ScrollTosection('contact')} className="px-[34px] py-[12px] bg-white text-[#7C7458] rounded-3xl ">
               Contact Me
             </button>
           </div>

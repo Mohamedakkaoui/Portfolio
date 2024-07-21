@@ -13,13 +13,13 @@ function App() {
   const scrollToSection = (section) => {
     let element;
     switch (section) {
-      case 'home':
+      case "home":
         element = homeRef.current;
         break;
-      case 'about':
+      case "about":
         element = aboutRef.current;
         break;
-      case 'contact':
+      case "contact":
         element = contactRef.current;
         break;
       default:
@@ -29,7 +29,7 @@ function App() {
     if (element) {
       window.scrollTo({
         top: element.offsetTop,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -37,12 +37,12 @@ function App() {
   return (
     <>
       <Router>
-        <NavBar  scrollToSection = {scrollToSection}/>
+        <NavBar scrollToSection={scrollToSection} />
         <div id="home" ref={homeRef}>
           <Hero />
         </div>
         <div id="about" ref={aboutRef}>
-          <AboutMe />
+          <AboutMe ScrollTosection={scrollToSection} />
         </div>
         <div id="contact" ref={contactRef}>
           <Contactme />
