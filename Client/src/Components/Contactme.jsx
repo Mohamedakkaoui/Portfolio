@@ -128,7 +128,7 @@ function Contactme() {
               </div>
               <button
                 type="submit"
-                className="mt-12 bg-[#c49b66] text-xl text-white px-5 py-4 rounded-full"
+                className="mt-12 bg-[#c49b66] text-xl font-semibold text-white px-5 py-4 rounded-full"
               >
                 Matb5lch Bchi Message!!!
               </button>
