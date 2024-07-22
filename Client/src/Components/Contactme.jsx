@@ -12,26 +12,26 @@ function Contactme() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    SetFormData(prevState => ({
+    SetFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3500/Add', FormData);
+      const response = await axios.post("http://localhost:3500/Add", FormData);
       if (response.status === 201) {
-        alert('Comment added successfully');
+        alert("Comment added successfully");
         SetFormData({
-          Name: '',
-          Email: '',
-          Subject: '',
-          Message: ''
+          Name: "",
+          Email: "",
+          Subject: "",
+          Message: "",
         });
       } else {
-        alert('Failed to add comment');
+        alert("Failed to add comment");
       }
     } catch (error) {
       console.error(error);
@@ -126,12 +126,14 @@ function Contactme() {
                   className="text-[#9ca3af] focus:outline-none p-3 ps-6 w-full h-[150px] mt-4 rounded-xl bg-[#222222]"
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                className="mt-12 bg-[#c49b66] text-xl font-semibold text-white px-5 py-4 rounded-full"
-              >
-                Matb5lch Bchi Message!!!
-              </button>
+              <div className="w-full ">
+                <button
+                  type="submit"
+                  className="flex justify-end mt-12 bg-[#c49b66] text-lg font-medium text-white px-5 py-4 rounded-full ml-auto"
+                >
+                  Matb5lch Bchi Message!!!
+                </button>
+              </div>
             </form>
           </div>
         </div>
