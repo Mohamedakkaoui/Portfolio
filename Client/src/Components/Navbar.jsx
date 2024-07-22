@@ -63,7 +63,10 @@ export default function NavBar({ scrollToSection }) {
               </a>
             </li>
             <li>
-              <a className="hover:cursor-pointer block py-2 px-3 text-white rounded  md:hover:bg-transparent font-semibold md:border-0 hover:text-[#7C7458] md:p-0 ">
+              <a
+                onClick={() => scrollToSection("Projects")}
+                className="hover:cursor-pointer block py-2 px-3 text-white rounded  md:hover:bg-transparent font-semibold md:border-0 hover:text-[#7C7458] md:p-0 "
+              >
                 Portfolio
               </a>
             </li>
