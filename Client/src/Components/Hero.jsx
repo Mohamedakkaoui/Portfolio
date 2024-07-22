@@ -12,6 +12,23 @@ function Hero() {
     }, 1800);
     return () => clearInterval(interval);
   });
+
+  const Links = [
+    { href: "https://github.com/Mohamedakkaoui", icon: <Github size={20} /> },
+    {
+      href: "https://www.linkedin.com/in/mohamedakkaoui/",
+      icon: <Linkedin size={20} />,
+    },
+    { href: "https://x.com/_datboiiMohamed", icon: <Twitter size={20} /> },
+    {
+      href: "https://www.instagram.com/mohamed_akkaoui/",
+      icon: <Instagram size={20} />,
+    },
+    {
+      href: "https://web.facebook.com/profile.php?id=100008860692186",
+      icon: <Facebook size={20} />,
+    },
+  ];
   return (
     <>
       <div
@@ -44,31 +61,11 @@ function Hero() {
             className="text-white px-9 py-3 mt-10 rounded-3xl flex gap-10 "
             style={{ backgroundColor: "rgba(200, 200, 200, 0.05)" }}
           >
-            <div className="hover:cursor-pointer">
-              <a href="https://github.com/Mohamedakkaoui">
-                <Github size={20} />
-              </a>
-            </div>
-            <div className="hover:cursor-pointer">
-              <a href="https://www.linkedin.com/in/mohamedakkaoui/">
-                <Linkedin size={20} />
-              </a>
-            </div>
-            <div className="hover:cursor-pointer">
-              <a href="https://x.com/_datboiiMohamed">
-                <Twitter size={20} />
-              </a>
-            </div>
-            <div className="hover:cursor-pointer">
-              <a href="https://www.instagram.com/mohamed_akkaoui/">
-                <Instagram size={20} />
-              </a>
-            </div>
-            <div className="hover:cursor-pointer">
-              <a href="https://web.facebook.com/profile.php?id=100008860692186">
-                <Facebook size={20} />
-              </a>
-            </div>
+            {Links.map((El) => (
+              <div className="hover:cursor-pointer">
+                <a href={El.href}>{El.icon}</a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
