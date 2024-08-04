@@ -6,11 +6,14 @@ import Contactme from "./Components/Contactme";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./Components/Portfolio";
+import Skills from "./Components/Skills";
+
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const ProjectsRef = useRef(null);
+  const SkillsRef = useRef(null);
   const scrollToSection = (section) => {
     let element;
     switch (section) {
@@ -25,6 +28,10 @@ function App() {
         break;
       case "Projects":
         element = ProjectsRef.current;
+        break;
+      case "Skills":
+        element = SkillsRef.current;
+        break;
       default:
         break;
     }
@@ -46,6 +53,9 @@ function App() {
         </div>
         <div id="about" ref={aboutRef}>
           <AboutMe ScrollTosection={scrollToSection} />
+        </div>
+        <div id="Skills" ref={SkillsRef}>
+          <Skills />
         </div>
         <div id="Projects" ref={ProjectsRef}>
           <Projects />
