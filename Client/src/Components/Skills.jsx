@@ -36,10 +36,10 @@ function Skills() {
             Skills
           </h1>
         </div>
-        <div className="flex flex-wrap gap-9">
+        <div className="flex flex-wrap gap-12 justify-center ">
           {Icons.map((el) => (
-            <div key={el.id} id={el.id}>
-              <img src={el.icon} alt="node.js" />
+            <div key={el.id} id={el.id} className="p-6 bg-white rounded-md">
+              <img src={el.icon} alt="node.js" className="w-[60px] h-[60px]"/>
             </div>
           ))}
         </div>
