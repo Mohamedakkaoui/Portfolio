@@ -12,6 +12,7 @@ import Git from "../assets/icons8-git-48.png";
 import Github from "../assets/icons8-github-50.png";
 import ReactJs from "../assets/icons8-react-50.png";
 import Tailwindcss from "../assets/icons8-tailwind-css-48.png";
+import Docker from "../assets/docker.png";
 function Skills() {
   const Icons = [
     { id: 1, icon: NodeJs, text: "Node.js" },
@@ -27,6 +28,7 @@ function Skills() {
     { id: 11, icon: Github, text: "Github" },
     { id: 12, icon: ReactJs, text: "React.js" },
     { id: 13, icon: Tailwindcss, text: "Tailwind.css" },
+    { id: 14, icon: Docker, text: "Docker" },
   ];
   return (
     <div className="relative bg-[#161617] min-h-screen text-white ">
@@ -42,11 +44,11 @@ function Skills() {
               <div
                 key={el.id}
                 id={el.id}
-                className="p-6 bg-white rounded-md mb-2 flex flex-col"
+                className="p-6 bg-white rounded-md mb-2"
               >
                 <img
                   src={el.icon}
-                  alt="node.js"
+                  alt={el.text}
                   className="w-[60px] h-[60px]"
                 />
               </div>
