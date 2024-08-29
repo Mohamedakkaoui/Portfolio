@@ -32,15 +32,15 @@ function Skills() {
   ];
   return (
     <div className="relative bg-[#161617] min-h-screen text-white ">
-      <div className="relative flex flex-col min-h-screen w-[80%] mx-auto pb-[120px] pt-[60px] bg-opacity-75 ">
+      <div className="relative flex flex-col min-h-screen w-[95%] mx-auto pb-[120px] pt-[60px] bg-opacity-75">
         <div className="mb-19">
           <h1 className="text-white text-center font-bold text-8xl tracking-wide mb-[90px]">
             Skills
           </h1>
         </div>
-        <div className="flex flex-wrap space-x-16 justify-center items-center">
+        <div className="flex flex-wrap justify-center">
           {Icons.map((el) => (
-            <div className="mb-12">
+            <div className="mb-16 mr-16">
               <div
                 key={el.id}
                 id={el.id}
@@ -52,7 +52,7 @@ function Skills() {
                   className="w-[60px] h-[60px]"
                 />
               </div>
-              <div className="text-[#c49b66] text-center font-semibold text-xl">
+              <div className="text-[#c49b66] text-center font-semibold text-xl mt-3">
                 {el.text}
               </div>
             </div>
